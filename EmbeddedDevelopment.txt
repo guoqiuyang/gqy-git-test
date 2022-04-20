@@ -20,8 +20,19 @@ github config:
 1.you install git in linux.And you can config
 git config --global user.name "yourname"
 git config --global user.email "youremail"
+git config --global core.editor "vim"
 
 2.you should create a account about github.
 3.In linux,you can run: ssh-keygen -t rsa -C "youremail"
 4.In ssh/id_rsa.pub file,you can get public key,and copy it to github web setting-SSH keys.
 5.you can now create repository.
+
+git Guide：
+git init  #first run git should init
+git remote add origin git@github.com:guoqiuyang/xxx.git   #it just add remote repository link,you can also set it in .git/config
+git clone git@github.com:guoqiuyang/xxx.git  [-b branch]      #we suggest use ssh link,it can push or pull more valid, -b clone branch.
+
+git pull --rebase  #the same as git fetch + git merge
+git add  #add modify file
+git commit -m "xxx"    #git commit with commit xxx
+git push [remote repository] [localbranch]:[remotebranch]  #for example,git push origin test:master or git push origin HEAD:refs/for/master
