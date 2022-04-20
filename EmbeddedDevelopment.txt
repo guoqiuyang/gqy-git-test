@@ -1,0 +1,27 @@
+Development log:
+
+1.install VMware software.setting:ROM50G,memory 2G,NAT connect；
+2.install ubuntu LTS version.
+3.install vim in linux:if apt-get update failed,you may need update source such as aliyun；
+4.install ssh in linux.
+you can locally access linux as client through secureCRT in Windows,and linux as server.
+5.install secureCRT in Windows.
+a)After install secureCRT,you should Crack it.
+b)login host is the address of ifconfig,login user and password is linux user and password.
+
+6.In order to transport file between Windows and Linux，you can install samba in linux.
+install samba in linux:
+a)set samba's password(different from linux password),and config sam.conf sharefile name and readable.
+b)you can map network drives in Windows.Login name and password is address of ifconfig and samba's password.
+c)if you map network drives failed, you can local open Windows Credential Manager and delete samba user and password.
+then, restart Workstation.
+
+github config:
+1.you install git in linux.And you can config
+git config --global user.name "yourname"
+git config --global user.email "youremail"
+
+2.you should create a account about github.
+3.In linux,you can run: ssh-keygen -t rsa -C "youremail"
+4.In ssh/id_rsa.pub file,you can get public key,and copy it to github web setting-SSH keys.
+5.you can now create repository.
